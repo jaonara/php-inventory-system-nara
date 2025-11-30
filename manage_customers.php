@@ -22,7 +22,7 @@ $result = $conn->query("SELECT customer_id, first_name, last_name, email FROM cu
   <title>Customers</title>
 </head>
 <body>
-  <h1>Customers</h1>
+  <h1>Customers Record</h1>
   <p class="btn-customers">
     <button type="button" class="btn btn-ghost" onclick="location.href='index.php'">Back to products</button>
     <button type="button" class="btn" onclick="location.href='add_customer.php'">Add Customer</button>

@@ -6,7 +6,7 @@ include 'database.php';
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <title>Nara Site</title>
+  <title>LazaShopee</title>
 </head>
 <body>
   <div class="bgcontainer">

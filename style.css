@@ -275,3 +275,11 @@ p {
     flex-wrap: wrap;        /* allows wrapping on small screens */
     margin: 12px 0;
 }
+.button-back {
+    display: flex;
+    gap: 20px;              
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;        
+    margin: 12px 0;
+}

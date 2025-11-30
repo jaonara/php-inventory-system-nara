@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Page title here</title>
+  <title>Add Category</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,9 +36,12 @@
                 <form method="post">
                     <label>Category name:</label>
                     <input type="text" name="category_name" required>
-                    <button type="submit">Save</button>
+
                 </form>
-                <p><a href="index.php">Back</a></p>
+                <div class="button-back">
+                    <button type="submit">Save</button>
+                    <button type="button" onclick="window.location.href='manage_categories.php'">Back to Categories</button>
+                </div>
             </body>
         </html>
 

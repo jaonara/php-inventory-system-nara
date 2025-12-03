@@ -65,12 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <label>Price:</label>
       <input type="number" name="price" step="0.01" required>
     </p>
-    <div class="btn-add-product">
-    <button type="submit">Save</button>
-    </form>
-    <p>
-      <button type="button" class="btn btn-ghost" onclick="location.href='index.php'">Back</button>
-    </p>
+      <div class="btn-add-product">
+      <button type="submit">Save</button>
+      </form>
+      <p>
+        <button type="button" class="btn btn-ghost" onclick="location.href='index.php'">Back</button>
+      </p>
     </div>
 </body>
 </html>

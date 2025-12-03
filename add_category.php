@@ -36,12 +36,11 @@
                 <form method="post">
                     <label>Category name:</label>
                     <input type="text" name="category_name" required>
-
-                </form>
-                <div class="button-back">
+                    <div class="button-back">
                     <button type="submit">Save</button>
                     <button type="button" onclick="window.location.href='manage_categories.php'">Back to Categories</button>
                 </div>
+                </form>
             </body>
         </html>
 

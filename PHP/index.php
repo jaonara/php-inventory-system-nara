@@ -5,18 +5,18 @@ include 'database.php';
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../CSS/style.css?v=2">
   <title>LazaShopee</title>
 </head>
 <body>
   <div class="bgcontainer">
-  <img src="lazashopee.png" alt="LazaShopee Logo" class="logo" height="150px" width="150px">
+  <img src="../img/lazashopee.png" alt="LazaShopee Logo" class="logo" height="150px" width="150px">
   <h1>Welcome to LazaShopee!</h1>
 
 <p class="nav">
-  <a class="btn" href="add_product.php">Products</a>
+  <a class="btn" href="../ADD/add_product.php">Products</a>
   <a class="btn btn-secondary" href="manage_categories.php">Categories</a>
-  <a class="btn" href="view_orders.php">Orders</a>
+  <a class="btn" href="../ORDER/view_orders.php">Orders</a>
   <a class="btn btn-ghost" href="manage_customers.php">Customers</a>
 </p>
 
@@ -43,8 +43,8 @@ include 'database.php';
       echo "<td>".htmlspecialchars($row['category_name'])."</td>";
       echo "<td>".$row['price']."</td>";
       echo "<td>
-              <a href='edit_product.php?id=".$row['product_id']."'>Edit</a> |
-              <a href='delete_product.php?id=".$row['product_id']."' onclick=\"return confirm('Delete this product?');\">Delete</a>
+              <a href='../EDIT/edit_product.php?id=".$row['product_id']."'>Edit</a> |
+              <a href='../DELETE/delete_product.php?id=".$row['product_id']."' onclick=\"return confirm('Delete this product?');\">Delete</a>
             </td>";
       echo "</tr>";
     }

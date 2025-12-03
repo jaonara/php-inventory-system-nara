@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Manage Categories</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../CSS/style.css?v=2">
 </head>
 <body>
       <div class="wrapper">
@@ -24,7 +24,7 @@
           <h1>Categories</h1>
           <p class="btn-row-categories">
             <button type="button" class="btn btn-ghost" onclick="location.href='index.php'">Back</button>
-            <button type="button" class="btn" onclick="location.href='add_category.php'">Add Category</button>
+            <button type="button" class="btn" onclick="location.href='../ADD/add_category.php'">Add Category</button>
           </p>
 
           <?php
@@ -36,8 +36,8 @@
                 echo "<td>".$row['category_id']."</td>";
                 echo "<td>".htmlspecialchars($row['category_name'])."</td>";
                 echo "<td>
-                        <a href='edit_category.php?id=".$row['category_id']."'>Edit</a> |
-                        <a href='delete_category.php?id=".$row['category_id']."' onclick=\"return confirm('Delete this category?');\">Delete</a>
+                        <a href='../EDIT/edit_category.php?id=".$row['category_id']."'>Edit</a> |
+                        <a href='../DELETE/delete_category.php?id=".$row['category_id']."' onclick=\"return confirm('Delete this category?');\">Delete</a>
                       </td>";
                 echo "</tr>";
               }

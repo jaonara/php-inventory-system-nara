@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Manage Customer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../CSS/style.css?v=2">
 </head>
 <body>
   <div class="wrapper">
@@ -27,7 +27,7 @@ $result = $conn->query("SELECT customer_id, first_name, last_name, email FROM cu
   </h1>
   <p class="btn-customers">
     <button type="button" class="btn btn-ghost" onclick="location.href='index.php'">Back to products</button>
-    <button type="button" class="btn" onclick="location.href='add_customer.php'">Add Customer</button>
+    <button type="button" class="btn" onclick="location.href='../ADD/add_customer.php'">Add Customer</button>
   </p>
 
   <?php
@@ -40,8 +40,8 @@ $result = $conn->query("SELECT customer_id, first_name, last_name, email FROM cu
       echo "<td>".htmlspecialchars($row['first_name']." ".$row['last_name'])."</td>";
       echo "<td>".htmlspecialchars($row['email'])."</td>";
       echo "<td>
-              <a href='edit_customer.php?id=".$row['customer_id']."'>Edit</a> |
-              <a href='delete_customer.php?id=".$row['customer_id']."' onclick=\"return confirm('Delete this customer?');\">Delete</a>
+              <a href='../EDIT/edit_customer.php?id=".$row['customer_id']."'>Edit</a> |
+              <a href='../DELETE/delete_customer.php?id=".$row['customer_id']."' onclick=\"return confirm('Delete this customer?');\">Delete</a>
             </td>";
       echo "</tr>";
     }
